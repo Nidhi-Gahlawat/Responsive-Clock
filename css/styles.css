@@ -1,0 +1,176 @@
+
+#move {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color:rgb(178, 222, 228);
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: 35;
+  }
+/*   
+  @keyframes example {
+    0%{background-color: rgb(178, 222, 228);left: 0px;top: 0px;}
+    25%{background-color:rgb(247, 183, 247);left: 200px;top: 0px;}
+    50%{background-color:rgb(219, 99, 219);left: 200px;top: 200px;}
+    75%{background-color:rgb(245, 8, 245);left: 0px;top: 200px;}
+    100%{background-color:rgb(178, 222, 228);left: 0px;top: 0px;}
+
+  } */
+  
+  h1{
+      text-align: center;
+  }
+
+  .dots{
+    display: flex;
+    justify-content: center;
+  }
+  .circ{
+      height: 23px;
+      width: 23px;
+      margin-top: 5px;
+      border-radius: 50%;
+      margin-left: 3px;
+      border:1px solid slateblue;
+      display: inline-block;
+      background-color: rgb(248, 7, 188);
+     
+  }
+  #cir1{
+    position: absolute;
+    margin-top: 0;
+  animation-name: ex;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  }
+  
+    @keyframes ex {
+    0%{background-color: rgb(157, 235, 235);left: 35%;top: 0px;}
+   50%{background-color: teal;left: 46.2%;top: 8px;}
+   100%{background-color: rgb(157, 235, 235);left: 35%;top: 0px;}
+
+  }   
+
+  #cir3{
+    position: absolute;
+    margin-top: 0;
+  animation-name: ex2;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  }
+  
+    @keyframes ex2 {
+    0%{background-color: teal;right: 46.2%;top: 8px;}
+   50%{background-color:  rgb(157, 235, 235);right: 35%;top: 0px;}
+   100%{background-color: teal;right: 46.2%;top: 8px;}
+
+  }   
+  
+
+   .boxes{
+    display: flex;
+    justify-content: center;
+ 
+  }
+ body{
+   background: #d9a7c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+ }
+  .box{
+   height: 150px;
+   width: 150px;
+   margin:170px 15px;
+   border-radius: 3px;
+   border:1px solid rgb(156, 6, 243);
+   text-align: center;
+   display: flex;
+   float: left;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: bolder;
+   font-size: 32px;
+   color: white;
+   box-shadow: 5px 8px #a7a3a3;
+  }
+  #box1{
+    background-color: rgb(240, 41, 223);
+  }
+  #box2{
+    background-color: rgb(241, 94, 151);
+  }
+  #box3{
+    background-color: rgb(179, 67, 231);
+  }
+  #box4{
+    background-color: rgb(103, 179, 241);
+  }
+
+  @media only screen and (max-width: 479px){
+    #box1 { width: 90%; }
+}
+.clk{
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+ 
+}
+
+@media only screen and (max-width:600px){
+  .flex-dir{
+    flex-direction:column;
+    }
+
+   #box1,#box2,#box3,#box4{
+     width: 202px;
+     height: 120px;
+     margin: 0 auto;
+     float: none;
+   }
+
+  #box1{
+    margin-top: 50px;
+  }
+  #box2,#box3,#box4{
+    margin-top: 20px;
+  }
+
+
+  #cir1{
+    position: absolute;
+    
+  animation-name: ex;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  }
+ 
+  #cir3{
+    position: absolute;
+    
+  animation-name: ex2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  }
+ 
+  @keyframes ex2 {
+    0%{background-color: teal;right: 42%;top: 7px;}
+   50%{background-color: teal;right: 30%;top: 0px;}
+   100%{background-color: teal;right: 42%;top: 7px;}
+
+  }
+  @keyframes ex {
+    0%{background-color: teal;left: 30%;top: 0px;}
+   50%{background-color: teal;left: 42%;top: 7px;}
+   100%{background-color: teal;left: 30%;top: 0px;}
+
+  }
+}
+
+
