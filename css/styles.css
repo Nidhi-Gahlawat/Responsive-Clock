@@ -20,6 +20,8 @@
   
   h1{
       text-align: center;
+      font-size: 28px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
   .dots{
@@ -32,9 +34,9 @@
       margin-top: 5px;
       border-radius: 50%;
       margin-left: 3px;
-      border:1px solid slateblue;
+      border:0px solid slateblue;
       display: inline-block;
-      background-color: rgb(248, 7, 188);
+      background-color: rgb(248, 100, 211);
      
   }
   #cir1{
@@ -82,9 +84,9 @@
   .box{
    height: 150px;
    width: 150px;
-   margin:170px 15px;
+   margin:130px 15px 20px 15px;
    border-radius: 3px;
-   border:1px solid rgb(156, 6, 243);
+   border:0px solid rgb(156, 6, 243);
    text-align: center;
    display: flex;
    float: left;
@@ -94,19 +96,22 @@
    font-weight: bolder;
    font-size: 32px;
    color: white;
-   box-shadow: 5px 8px #a7a3a3;
   }
   #box1{
     background-color: rgb(240, 41, 223);
+    box-shadow: 5px 8px #f09be4;
   }
   #box2{
     background-color: rgb(241, 94, 151);
+    box-shadow: 5px 8px #e989b6;
   }
   #box3{
     background-color: rgb(179, 67, 231);
+    box-shadow: 5px 8px #d89cf0;
   }
   #box4{
-    background-color: rgb(103, 179, 241);
+    background-color: rgb(248, 118, 118);
+    box-shadow: 5px 8px  rgb(248, 147, 181);
   }
 
   @media only screen and (max-width: 479px){
@@ -173,4 +178,40 @@
   }
 }
 
-
+#stopwatch{
+text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ margin:45px 14px;
+ height: 38px;
+ width: auto;
+ border: 1px solid rgb(156, 151, 156);
+ border: 0px;
+ border-radius: 3px;
+ box-shadow:5px 5px rgb(144, 148, 144);
+ font-size: 18px;
+ font-weight: bold;
+ color: black;
+}
+/* Code for stopwatch Page */
+.stopwatch{
+    display: flex;
+    justify-content: center;
+}
+#start,#stop_timer{
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ margin: 0 14px;
+ height: 38px;
+ width: 100px;
+ border: 1px solid rgb(156, 151, 156);
+ border-radius: 3px;
+ font-size: 18px;
+ font-weight: bold;
+ color: black;
+}
+#start{
+  background-color: rgb(255, 255, 255);
+}
+#stop_timer{
+  background-color: rgb(231, 223, 223);
+}

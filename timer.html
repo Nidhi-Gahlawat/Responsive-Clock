@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+      #box{background-color: black;
+        box-shadow: 6px 8px rgb(75, 66, 66);
+        margin-top: 10px;
+        height: 180px;
+        width: 180px;
+      }
+      body{
+        background: #00C9FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+    </style>
+    <title>Stop Watch</title>
+</head>
+<body>
+    <!-- <div class="dots">
+        <span class="circ" id="cir1" ></span>
+        <span class="circ" ></span>
+        <span class="circ" id="cir3"></span>
+    </div> -->
+    <div class="clk" style="margin-top: 20px;">
+        <h1>Better Three Hours Too Soon Than a Minute Too Late.</h1>
+       </div>
+     <div class="clk">
+         <h3 style="color: rgb(87, 83, 88);">Stopwatch</h3>
+     </div>
+      
+       <div class="boxes flex-dir">
+        <span class="box" id="box"> <div id="timer">00:00:00</div>
+        </span></div>
+
+        <div class="stopwatch">
+            <button id='start' onclick="a()">START</button>
+       <button id ="stop_timer" >STOP</button>
+    
+        </div>
+        <div class="stopwatch">   <button id="stopwatch"> <a href="index.html">Go to Clock</a> </button></div>
+ 
+       
+       <script src="js/timer.js"></script>
+</body>
+</html>
