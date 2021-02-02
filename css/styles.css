@@ -113,10 +113,10 @@
     background-color: rgb(248, 118, 118);
     box-shadow: 5px 8px  rgb(248, 147, 181);
   }
-
+/* 
   @media only screen and (max-width: 479px){
     #box1 { width: 90%; }
-}
+} */
 .clk{
   font-size: 30px;
   display: flex;
@@ -128,12 +128,57 @@
  
 }
 
+
+
+#stopwatch{
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin:45px 14px;
+   height: 38px;
+   width: auto;
+   border: 1px solid rgb(156, 151, 156);
+   border: 0px;
+   border-radius: 3px;
+   box-shadow:5px 5px rgb(144, 148, 144);
+   font-size: 18px;
+   font-weight: bold;
+   color: black;
+  }
+  /* Code for stopwatch Page */
+  .stopwatch{
+      display: flex;
+      justify-content: center;
+  }
+  #start,#stop_timer{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin: 0 14px;
+   height: 38px;
+   width: 100px;
+   border: 1px solid rgb(156, 151, 156);
+   border-radius: 3px;
+   font-size: 18px;
+   font-weight: bold;
+   color: black;
+  }
+  #start{
+    background-color: rgb(255, 255, 255);
+  }
+  #stop_timer{
+    background-color: rgb(231, 223, 223);
+  }
+
+
+
+
+
+
 @media only screen and (max-width:600px){
   .flex-dir{
     flex-direction:column;
     }
 
-   #box1,#box2,#box3,#box4{
+   #box1,#box2,#box3,#box4,#box{
      width: 202px;
      height: 120px;
      margin: 0 auto;
@@ -143,7 +188,7 @@
   #box1{
     margin-top: 50px;
   }
-  #box2,#box3,#box4{
+  #box2,#box3,#box4,#box{
     margin-top: 20px;
   }
 
@@ -176,42 +221,5 @@
    100%{background-color: teal;left: 30%;top: 0px;}
 
   }
-}
 
-#stopwatch{
-text-align: center;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- margin:45px 14px;
- height: 38px;
- width: auto;
- border: 1px solid rgb(156, 151, 156);
- border: 0px;
- border-radius: 3px;
- box-shadow:5px 5px rgb(144, 148, 144);
- font-size: 18px;
- font-weight: bold;
- color: black;
-}
-/* Code for stopwatch Page */
-.stopwatch{
-    display: flex;
-    justify-content: center;
-}
-#start,#stop_timer{
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- margin: 0 14px;
- height: 38px;
- width: 100px;
- border: 1px solid rgb(156, 151, 156);
- border-radius: 3px;
- font-size: 18px;
- font-weight: bold;
- color: black;
-}
-#start{
-  background-color: rgb(255, 255, 255);
-}
-#stop_timer{
-  background-color: rgb(231, 223, 223);
 }
