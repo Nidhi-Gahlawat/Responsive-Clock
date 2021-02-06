@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        h1{
+            font-family: 'Chelsea Market', cursive;
+            background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-radius: 10px;
+        }
+        body {
+            background: #74ebd5;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ACB6E5, #74ebd5);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        #box1 {
+            width: 190px;
+            padding: 0 30px;
+            font-size: 16px;
+            border: 0px;
+            background-color: rgb(17, 24, 121);
+            margin-top: 30px;
+            box-shadow: 5px 5px rgb(164, 136, 228);
+        }
+
+        #box2 {
+            font-size: 19px;
+            width: 190px;
+            padding: 0 30px;
+            border: 0px;
+            background-color: rgb(21, 112, 148);
+            margin-top: 30px;
+            box-shadow: 5px 5px rgb(107, 181, 216);
+        }
+
+        #date, #time {
+            font-size: 19px;
+            width: 170px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clk" style="font-size: x-large;color: rgb(8, 5, 187); ;font-family: Helvetica;margin-bottom: 50px;">
+        <h1>COUNTDOWN TIMER</h1>
+    </div>
+
+    <div class="clk">
+        <h1 id="h1">Set Date and Time for the Timer</h1>
+    </div>
+
+    <div class="boxes flex-dir">
+        <span class="box" id="box1">
+
+            <label for="date" id="l1">Date</label>
+            <div id="cont1"> <input type="date" class="inputBox" style="font-size: 18px;" name="date" id="date">
+            </div>
+        </span>
+        <span class="box" id="box2">
+            <label for="time" id="l2">Time</label>
+            <div id="cont2"> <input type="time" class="inputBox" style="font-size: 18px;" name="time" id="time" required> 
+            </div>
+        </span>
+
+    </div>
+    <div class="stopwatch">
+        <button onclick="a()" id="settimer" style="margin: 10px auto;"> Set Timer</button>
+    
+    </div>
+    <div class="stopwatch" style="margin:0;"> <button id="stopwatch"> <a href="./stopwatch.html">Stopwatch</a> </button>
+     <button id="stopwatch"> <a href="./index.html">Clock</a> </button></div>
+
+    <script src="js/timer.js"></script>
+</body>
+
+</html>

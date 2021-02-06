@@ -96,6 +96,7 @@
    font-weight: bolder;
    font-size: 32px;
    color: white;
+   position: relative;
   }
   #box1{
     background-color: rgb(240, 41, 223);
@@ -130,12 +131,12 @@
 
 
 
-#stopwatch{
+#stopwatch,#settimer{
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    margin:45px 14px;
    height: 38px;
-   width: auto;
+   width: 140px;
    border: 1px solid rgb(156, 151, 156);
    border: 0px;
    border-radius: 3px;
@@ -168,10 +169,25 @@
     background-color: rgb(231, 223, 223);
   }
 
+/*for TIMER */
 
-
-
-
+.inputBox{
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+label{
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  text-align: center;
+}
+#cont1,#cont2{
+  font-size: xx-large;
+  font-weight: bolder;
+}
 
 @media only screen and (max-width:600px){
   .flex-dir{
@@ -191,8 +207,9 @@
   #box2,#box3,#box4,#box{
     margin-top: 20px;
   }
-
-
+label{
+  visibility: hidden;
+}
   #cir1{
     position: absolute;
     
