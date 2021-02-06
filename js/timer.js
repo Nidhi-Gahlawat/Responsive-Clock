@@ -79,7 +79,7 @@ document.getElementById('h1').innerText="Timer is Running!";
     
     if (distance <= 0) {
       clearInterval(clr);
-      var audio = new Audio('http://onj3.andrelouis.com/phonetones/unzipped/Alcatel%20Idol%20X/ringtones/Woodwork.mp3');
+      var audio = new Audio('http://soundcavern.free.fr/guitar/AcGuit_Minor_Chords%20-%20Eminup.wav');
       audio.play();
      
       document.getElementById('h1').innerText="Time's Up!";
