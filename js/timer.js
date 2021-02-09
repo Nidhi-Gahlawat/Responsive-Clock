@@ -79,8 +79,8 @@ document.getElementById('h1').innerText="Timer is Running!";
     
     if (distance <= 0) {
       clearInterval(clr);
-      var audio = new Audio('http://soundcavern.free.fr/guitar/AcGuit_Minor_Chords%20-%20Eminup.wav');
-      audio.play();
+//       var audio = new Audio('http://soundcavern.free.fr/guitar/AcGuit_Minor_Chords%20-%20Eminup.wav');
+//       audio.play();
      
       document.getElementById('h1').innerText="Time's Up!";
       document.getElementById("cont1").innerHTML = "00";
