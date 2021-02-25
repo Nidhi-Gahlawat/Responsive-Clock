@@ -1,4 +1,4 @@
-# Responsive Clock, Stopwatch and Timer. Three in one. ⌚ :alarm_clock: :stopwatch: :timer_clock:
+# :stopwatch: :timer_clock: Responsive Clock, Stopwatch and Timer. Three in one. ⌚:alarm_clock:
  
 ## Built with ⌨️
 * HTML5
