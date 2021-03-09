@@ -20,7 +20,7 @@ switch(day){
     document.getElementsByName('days').innerHTML='ddd';    
 
     hrs=date.getHours();
-    if(hrs>12){
+    if(hrs>=12){
     b4.innerText="PM";   
     hrs=hrs-12;
     b1.innerHTML=hrs+"<small>&nbspHRS</small>";
